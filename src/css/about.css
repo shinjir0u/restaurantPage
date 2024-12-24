@@ -1,0 +1,15 @@
+#content {
+    --white-color: rgb(250, 247, 240);
+    --lead-color: rgb(216, 210, 194);
+    --brown-color: rgb(177, 116, 87);
+    --black-color: rgb(74, 73, 71);
+
+    display: grid;
+    grid-template-rows: repeat(2, minmax(40px, 50px)) minmax(50px, 200px);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

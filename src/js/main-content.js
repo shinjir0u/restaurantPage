@@ -1,3 +1,4 @@
+import "../css/main-content.css";
 import ramenShopImage from "../img/ramen.jpg";
 
 function createMainContent() {
@@ -14,8 +15,8 @@ function createMainContent() {
     description.textContent = `The shop is old and small but the flavour isn't to be thought lightly.
             The noodle tastes so good that you'll feel alive again.`;
 
-    mainContentContainer.appendChild(shopImage);
     mainContentContainer.appendChild(heading);
+    mainContentContainer.appendChild(shopImage);
     mainContentContainer.appendChild(description);
 }
 
