@@ -1,0 +1,84 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* My Css */
+
+  :root {
+    --white-color: rgb(250, 247, 240);
+    --lead-color: rgb(216, 210, 194);
+    --brown-color: rgb(177, 116, 87);
+    --black-color: rgb(74, 73, 71);
+  }
+
+  body {
+    height: 100vh;
+    background-color: var(--lead-color);
+    display: grid;
+    grid-template-columns: minmax(500px, 1000px);
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .page-content {
+    display: grid;
+    grid-template-rows: minmax(30px, 80px) minmax(500px, 1fr);
+    border: 3px solid var(--black-color);
+    border-radius: 5px;
+  }
+
+  header {
+    background-color: var(--brown-color);
+    display: grid;
+    place-items: center;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(50px, 200px));
+    gap: 1rem;
+  }
+
+  .nav-button {
+    appearance: none;
+    background-color: var(--white-color);
+    border-radius: 5px;
+  }
